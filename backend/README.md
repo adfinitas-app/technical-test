@@ -7,7 +7,7 @@ L'objectif de ce test est d'évaluer vos compétences en développement backend,
 Développez deux serveurs un en Express.js pour recevoir les requêtes POST contenant des calculs à effectuer et un autre qui utilise les Pub/Sub de Redis pour traiter les calculs en utilisant une file d'attente.
 1. Un **collecteur** qui reçoit les requêtes POST contenant des calculs à effectuer (uniquement 2 opérandes) et les stocke dans une file d'attente pour être traitées ultérieurement
 2. Un **processeur** qui traite les tâches en utilisant un système de file d'attente.
-Créer un README-RUN.md pour expliquer comment exécuter le projet.
+3. Créer un README-RUN.md pour expliquer comment exécuter le projet.
 
 Bonus : 
 1. Utilisez Docker pour exécuter les serveurs. 
@@ -88,8 +88,8 @@ Pour ce test, je vous demande de forker ce repository sur votre compte GitHub pe
 
 1. **Collector (collector.ts)** : Ce fichier contient le code pour le collecteur qui reçoit les requêtes POST et les stocke dans Redis pour traitement ultérieur.
 2. **Processor (processor.ts)** : Ce fichier contient le code pour le processeur qui traite les tâches en utilisant Redis comme système de file d'attente.
-3. **Dockerfile-proc** : Ce fichier contient les instructions pour créer une image Docker contenant le code du collecteur et du processeur.
-3. **Dockerfile-collector** : Ce fichier contient les instructions pour créer une image Docker contenant le code du collecteur.
+3. Bonus : **Dockerfile-proc** : Ce fichier contient les instructions pour créer une image Docker contenant le code du collecteur et du processeur.
+3.  Bonus : **Dockerfile-collector** : Ce fichier contient les instructions pour créer une image Docker contenant le code du collecteur.
 4. **docker-compose.yml** : Ce fichier contient les instructions pour exécuter les images Docker du collecteur et du processeur ainsi que les lignes déja préparées pour Redis. 
 5. **.env** : Ce fichier contient les variables d'environnement nécessaires pour exécuter les images Docker.
 6. **.gitignore** : Ce fichier contient les fichiers et dossiers à ignorer lors de la mise en ligne du projet.
