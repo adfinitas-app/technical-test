@@ -79,8 +79,6 @@ interface Task {
 }
 ```
 
-**Note :**
-Pour ce test, je vous demande de forker ce repository sur votre compte GitHub personnel et de me donner un accès en privé. Veuillez utiliser la convention de commits [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/). Utilisez des branches au maximum pour que je puisse évaluer votre utilisation de Git.
 
 ---
 
